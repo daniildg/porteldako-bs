@@ -1,0 +1,127 @@
+:root {
+  /* установили основные цвета страницы */
+  --color-1: #036;
+  --bg-1: #f3f3f3;
+  --bg-2: #00082e;
+  --decor: #636d82e3;
+  /* #636d82d4 */
+}
+section {
+  padding: 100px 0;
+}
+header {
+  background-image: url(../img/about--bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo-box {
+  max-width: 160px;
+  height: 100%;
+  margin-bottom: 18%;
+} 
+/* нав */
+.nav-link {
+  font-size: 1.2rem;
+  color: var(--color-1);
+}
+/* хедер */
+header .content-box {
+  border-radius: 12px;
+  color: var(--bs-white);
+  background-color: var(--decor);
+}
+header .content-box p {
+  margin: 0;
+}
+/* о нас */
+.about {
+  padding: 70px 0;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--decor);
+  margin: 0 auto;
+}
+:nth-child(1 of .line) {
+  width: 90%;
+}
+.btn-pe-box {
+  padding: 150px 0;
+}
+.btn-pe {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 16px 30px;
+  color: var(--bs-white);
+  background-color: var(--bs-green);
+  font-weight: 500;
+  transition: opacity 0.4ms ease;
+}
+.btn-pe:hover {
+  color: var(--bs-white);
+  opacity: 0.7;
+}
+/* преимущества */
+.pe-card {
+  border-radius: 8%;
+}
+.features .pe-card {
+  max-width: 260px;
+}
+.features .pe-card h3{
+  color: var(--color-1);
+}
+.features .pe-card p {
+  font-weight: 500;
+}
+/* услуги */
+.service .pe-card{
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.4);
+}
+.service .pe-card img {
+  border-radius: 8% 8% 0 0;
+}
+.service .pe-card h5 {
+  color: var(--color-1);
+}
+.service .pe-card p {
+  font-weight: 500;
+}
+/* график */
+.graph img {
+  background-color: #fff;
+  object-fit: cover;
+}
+/* цвет */
+.color-1 {
+  color: var(--color-1);
+}
+.color-2 {
+  color: var(--bs-white);
+}
+.bg-1 {
+  background-color: var(--bg-1);
+}
+.bg-2 {
+  background-color: var(--bg-2);
+}
+/* @media screen and (max-width: 425px) {
+  .header-box {
+    background-size: 350%;
+    background-position: center -80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-box {
+    background-size: 400%;
+    background-position: center -100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-box {
+    background-size: 450%;
+    background-position: center -80px;
+  }
+} */
