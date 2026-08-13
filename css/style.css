@@ -1,10 +1,8 @@
 :root {
-  /* установили основные цвета страницы */
   --color-1: #036;
   --bg-1: #f3f3f3;
   --bg-2: #00082e;
   --decor: #636d82e3;
-  /* #636d82d4 */
 }
 section {
   padding: 100px 0;
@@ -12,8 +10,14 @@ section {
 header {
   background-image: url(../img/about--bg.png);
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
+}
+footer {
+  padding: 24px 0;
+}
+a {
+  text-decoration: none;
 }
 .logo-box {
   max-width: 160px;
@@ -90,9 +94,22 @@ header .content-box p {
   font-weight: 500;
 }
 /* график */
+.carousel-item-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .graph img {
-  background-color: #fff;
-  object-fit: cover;
+  object-fit: contain;
+}
+/* футер */
+footer a {
+  color: inherit;
+  transition: opacity 0.4ms ease;
+}
+footer a:hover {
+  color: inherit;
+  opacity: 0.7;
 }
 /* цвет */
 .color-1 {
@@ -107,21 +124,3 @@ header .content-box p {
 .bg-2 {
   background-color: var(--bg-2);
 }
-/* @media screen and (max-width: 425px) {
-  .header-box {
-    background-size: 350%;
-    background-position: center -80px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .header-box {
-    background-size: 400%;
-    background-position: center -100px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .header-box {
-    background-size: 450%;
-    background-position: center -80px;
-  }
-} */

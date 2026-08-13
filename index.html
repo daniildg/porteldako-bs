@@ -16,7 +16,7 @@
   <nav class="nav justify-content-center bg-1">
     <a class="nav-link active text-success" aria-current="page" href="#autoport">Порт-Авто</a>
     <a class="nav-link" href="#service">Услуги</a>
-    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+    <a href="https://shipping.porteldako.ru" class="nav-link text-success">Диспетчерская</a>
   </nav>
   <!-- блок нав конец -->
 
@@ -34,7 +34,7 @@
       </div>
 
       <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-8">
+        <div class="col-10 col-lg-8">
           <div class="content-box text-center mx-auto py-4 px-2 mb-4">
             <h1 class="text-uppercase mb-3">О нас</h1>
             <p class="w-75 mx-auto">«Порт Эльдако» - морской грузовой порт на реке Дон, в локации города
@@ -168,10 +168,14 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/graph24.jpeg" class="d-block w-100 img-fluid" alt="показатели за год">
+                <div class="carousel-item-box">
+                  <img src="img/graph24.jpeg" class="d-block w-100 img-fluid" alt="показатели за год">
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="img/graph3y.jpg" class="d-block w-100 img-fluid" alt="показатели за три года">
+                <div class="carousel-item-box">
+                  <img src="img/graph3y.jpg" class="d-block w-100 img-fluid" alt="показатели за три года">
+                </div>
               </div>
             </div>
           </div>
@@ -181,6 +185,25 @@
   </section>
   <!-- блок график конец -->
 
+  <!-- блок футер начало -->
+  <footer id="footer" class="bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center color-2">
+          <span class="footer__current_year"></span>&nbsp;
+          <a href="https://github.com/daniildg" target="_blank">разработка @daniildg</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- блок футер конец -->
+
+  <script>
+    let today = new Date();
+    let year = today.getFullYear();
+    let footerCurrentYear = document.querySelector('.footer__current_year');
+    footerCurrentYear.textContent = year;
+  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
