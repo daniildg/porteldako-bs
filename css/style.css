@@ -43,7 +43,10 @@ li {
   max-width: 160px;
   height: 100%;
   margin-bottom: 18%;
-} 
+}
+.logo-box a:hover {
+  opacity: 1;
+}
 header .content-box {
   border-radius: 12px;
   color: var(--bs-white);
@@ -117,6 +120,20 @@ header .content-box p {
   object-fit: contain;
 }
 /* контакты */
+.map {
+  display: block;
+  height: 350px;
+  max-width: 560px;
+  width: 100%;
+  background-image: url(../img/Basemap-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.contacts ul {
+  padding: 0;
+}
 .item-heading {
   font-size: 1.4rem;
   font-weight: 500;
@@ -136,4 +153,9 @@ header .content-box p {
 }
 .bg-2 {
   background-color: var(--bg-2);
+}
+@media screen and (max-width: 991px) {
+  section {
+    padding: 50px 0;
+  }
 }

@@ -165,7 +165,7 @@
   <!-- блок услуги конец -->
 
   <!-- блок график начало -->
-  <section class="graph bg-2">
+  <!-- <section class="graph bg-2">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -191,27 +191,28 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- блок график конец -->
 
   <section id="contacts" class="contacts bg1">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="text-center text-uppercase mb-3 color-1">Контакты</h2>
+          <h2 class="text-center text-uppercase mb-5 color-1">Контакты</h2>
         </div>
       </div>
-      <div class="row align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-center g-3">
         <div class="col-12 col-lg-6">
-          <!-- <img src="img/preview.png" alt="Супер JavaScript" class="img-fluid d-block mx-auto"> -->
+          <div id="map" class="map"></div>
         </div>
-        <div class="col-10 col-lg-6 color-1">
+        <div class="col-10 col-lg-3 color-1">
           <ul>
             <li class="item-heading">Адрес</li>
-            <li class="item-content">344002, Россия, Ростовская область, г. Ростов-на-Дону, ул. 1-я Луговая 17, корпус Б
+            <li class="item-content">
+              <address>344002, Россия, Ростовская&nbsp;область, г.&nbsp;Ростов-на-Дону, ул.&nbsp;1-я&nbsp;Луговая&nbsp;17, корпус&nbsp;Б</address>
             </li>
             <li class="item-heading">Приемная</li>
-            <li class="item-content"><a href="tel:+78632030100">+78632030100</a></li>
+            <li class="item-content"><a href="tel:+78632030100">+7&nbsp;(863)&nbsp;203-01-00</a></li>
             <li class="item-heading">E-mail</li>
             <li class="item-content"><a href="mailto:mail@port-logistic.ru">mail@port-logistic.ru</a></li>
           </ul>
@@ -233,13 +234,15 @@
   </footer>
   <!-- блок футер конец -->
 
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script>
     let today = new Date();
     let year = today.getFullYear();
     let footerCurrentYear = document.querySelector('.footer__current_year');
     footerCurrentYear.textContent = year;
   </script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d9b3ed11-4dc0-47c3-85ab-51858bd72648&lang=ru_RU"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
